@@ -1,0 +1,3 @@
+[submodule "software/opendps"]
+	path = software/opendps
+	url = https://github.com/kanflo/opendps

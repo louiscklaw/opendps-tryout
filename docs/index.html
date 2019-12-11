@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>openDPS documentation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <style>
+    .label {
+      font-weight: unset
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-3">
+        OpenDPS tryout/workplan/documentation
+      </h1>
+      <h2 class="subtitle is-4">
+        diagram
+      </h2>
+      <div class="mermaid">
+        graph LR
+        subgraph my power supply
+        power_src[power source]
+        PiNano[LicheePi Nano]
+        wifi[wifi]
+        DPS3003_1[DPS3003]
+        DPS3003_2[DPS3003]
+        out_ch1[output channel1]
+        out_ch2[output channel2]
+        PiNano --comm--- wifi
+        PiNano --control--> DPS3003_1 --> out_ch1
+        PiNano --control--> DPS3003_2 --> out_ch2
+        power_src --supply power--> DPS3003_1
+        power_src --supply power--> DPS3003_2
+        end
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle is-4">
+        software
+      </h2>
+      <ul>
+        <li>
+          <a href="https://github.com/kanflo/opendps">opendps</a>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle is-4">
+        hardware
+      </h2>
+      <h3 class="subtitle is-5">BOM</h3>
+      <ul>
+        <li>
+          <a href="https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.154.4aa25886tf0xJr&id=585805022698">荔枝派
+            Zero LicheePi Zero</a>
+        </li>
+        <li>
+          <a href="https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.4.4aa25886tf0xJr&id=605235763399">DPS3003
+            恒压恒流可调显示数控 32V3A 电压电流 彩屏电源直流数控
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle is-4">
+        Reference:
+      </h2>
+      <ul>
+        <li><a href="https://github.com/kanflo/opendps">https://github.com/kanflo/opendps</a></li>
+        <li><a href="https://github.com/0x6470/opendps_rpi">opendps_rpi</a></li>
+        <li><a href="https://github.com/danielkucera/esp8266-opendps">esp8266-opendps</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize( {
+      startOnLoad: true
+    } );
+  </script>
+
+</body>
+
+</html>
