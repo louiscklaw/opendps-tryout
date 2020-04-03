@@ -9424,10 +9424,10 @@ Wire Wire Line
 Connection ~ 10850 950 
 Wire Wire Line
 	10850 950  10850 1050
-Text Label 8900 3250 2    50   ~ 0
+Text Label 8700 3250 2    50   ~ 0
 FEL_ENABLE
 Wire Wire Line
-	8900 3250 8050 3250
+	8700 3250 8050 3250
 $Comp
 L customized_power:+5V #PWR?
 U 1 1 5E895245
@@ -9511,12 +9511,32 @@ Text Label 2850 4350 0    50   ~ 0
 UART1_RX
 Wire Wire Line
 	3850 4350 2850 4350
-Text Label 9050 3550 2    50   ~ 0
+Text Label 8700 3550 2    50   ~ 0
 UART1_TX
 Wire Wire Line
-	8050 3550 9050 3550
-Text Label 9050 3750 2    50   ~ 0
+	8050 3550 8700 3550
+Text Label 8700 3750 2    50   ~ 0
 UART1_RX
 Wire Wire Line
-	8050 3750 9050 3750
+	8050 3750 8700 3750
+Text Label 8700 4150 2    50   ~ 0
+PE10
+Wire Wire Line
+	8050 4150 8700 4150
+Text Label 8700 3950 2    50   ~ 0
+PE9
+Wire Wire Line
+	8050 3950 8700 3950
+Text Label 8700 3150 2    50   ~ 0
+PE5
+Wire Wire Line
+	8050 3150 8700 3150
+Text Label 8700 2950 2    50   ~ 0
+PE4
+Wire Wire Line
+	8050 2950 8700 2950
+Text Label 8700 2750 2    50   ~ 0
+PE3
+Wire Wire Line
+	8050 2750 8700 2750
 $EndSCHEMATC
