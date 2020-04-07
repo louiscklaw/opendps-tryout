@@ -1,6 +1,112 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Connector_Generic_Conn_01x03
+#
+DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x06
+#
+DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Connector_Generic_Conn_01x06" 0 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -350 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+X Pin_6 6 -200 -300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Antenna_Shield
+#
+DEF Device_Antenna_Shield AE 0 40 N N 1 F N
+F0 "AE" -75 175 50 H V R CNN
+F1 "Device_Antenna_Shield" -75 100 50 H V R CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+A -1 -73 32 -882 1242 0 1 0 N 0 -105 -20 -45
+A 1 -73 32 -918 558 0 1 0 N 0 -105 20 -45
+C 30 -75 7 0 1 0 F
+P 2 0 1 0 0 -100 0 0 N
+P 2 0 1 10 0 200 0 -150 N
+P 2 0 1 0 30 -75 100 -75 N
+P 2 0 1 0 100 -100 100 -75 N
+P 3 0 1 10 50 200 0 0 -50 200 N
+X A 1 0 -200 100 U 50 50 1 1 I
+X Shield 2 100 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Diode_1N4148
+#
+DEF Diode_1N4148 D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_1N4148" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS 1N4448 1N4149 1N4151 1N914 BA243 BA244 BA282 BA283 BAV17 BAV18 BAV19 BAV20 BAV21 BAW75 BAW76 BAY93
+$FPLIST
+ D*DO?35*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
 # Switch_SW_Push_Dual_x2
 #
 DEF Switch_SW_Push_Dual_x2 SW 0 40 Y N 2 F N
@@ -17,6 +123,22 @@ X C 1 -200 0 100 R 50 50 1 1 P
 X D 2 200 0 100 L 50 50 1 1 P
 X C 3 -200 0 100 R 50 50 2 1 P
 X D 4 200 0 100 L 50 50 2 1 P
+ENDDRAW
+ENDDEF
+#
+# customized_power_+3V3
+#
+DEF customized_power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "customized_power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -48,6 +170,107 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# sz_jlc_capacitor_33pF,(330),±5%,50V,C0G,0603,C1663
+#
+DEF sz_jlc_capacitor_33pF,(330),±5%,50V,C0G,0603,C1663 U 0 10 N N 1 F N
+F0 "U" 10 70 50 H V L CNN
+F1 "sz_jlc_capacitor_33pF,(330),±5%,50V,C0G,0603,C1663" 50 -100 50 H V L CNN
+F2 "w_smd_cap:c_0603" 0 -1000 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "C1663" 0 -500 50 H I C CNN "LCSC_Part"
+F5 "33pF,(330),±5%,50V,C0G,0603,C1663" 50 -200 50 H I L CNN "MFR_Part"
+F6 "电容_贴片电容" 0 -600 50 H I C CNN "Second Category"
+F7 "0603" 0 -800 50 H I C CNN "Package"
+F8 "2" 0 -1100 50 H I C CNN "Solder Joint"
+F9 "SAMSUNG 三星" 0 -700 50 H I C CNN "Manufacturer"
+F10 "基础库" 0 -900 50 H I C CNN "Library Type"
+F11 "33pF (330) ±5% 50V C0G" 0 -900 50 H I C CNN "Library Type"
+$FPLIST
+ *0603*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# sz_jlc_resistor_100KΩ,(1003),±1%,0603,C25803
+#
+DEF sz_jlc_resistor_100KΩ,(1003),±1%,0603,C25803 U 0 10 N N 1 F N
+F0 "U" 10 70 50 H V L CNN
+F1 "sz_jlc_resistor_100KΩ,(1003),±1%,0603,C25803" 50 -100 50 H V L CNN
+F2 "w_smd_resistors:r_0603" 0 -1000 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "C25803" 0 -500 50 H I C CNN "LCSC_Part"
+F5 "100KΩ,(1003),±1%,0603,C25803" 50 -200 50 H I L CNN "MFR_Part"
+F6 "电阻_贴片电阻" 0 -600 50 H I C CNN "Second Category"
+F7 "0603" 0 -800 50 H I C CNN "Package"
+F8 "2" 0 -1100 50 H I C CNN "Solder Joint"
+F9 "UniOhm 台湾厚声" 0 -700 50 H I C CNN "Manufacturer"
+F10 "基础库" 0 -900 50 H I C CNN "Library Type"
+F11 "100KΩ (1003) ±1%" 0 -900 50 H I C CNN "Library Type"
+$FPLIST
+ *0603*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# sz_jlc_resistor_10KΩ,(1002),±1%,0603,C25804
+#
+DEF sz_jlc_resistor_10KΩ,(1002),±1%,0603,C25804 U 0 10 N N 1 F N
+F0 "U" 10 70 50 H V L CNN
+F1 "sz_jlc_resistor_10KΩ,(1002),±1%,0603,C25804" 50 -100 50 H V L CNN
+F2 "w_smd_resistors:r_0603" 0 -1000 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "C25804" 0 -500 50 H I C CNN "LCSC_Part"
+F5 "10KΩ,(1002),±1%,0603,C25804" 50 -200 50 H I L CNN "MFR_Part"
+F6 "电阻_贴片电阻" 0 -600 50 H I C CNN "Second Category"
+F7 "0603" 0 -800 50 H I C CNN "Package"
+F8 "2" 0 -1100 50 H I C CNN "Solder Joint"
+F9 "UniOhm 台湾厚声" 0 -700 50 H I C CNN "Manufacturer"
+F10 "基础库" 0 -900 50 H I C CNN "Library Type"
+F11 "10KΩ (1002) ±1%" 0 -900 50 H I C CNN "Library Type"
+$FPLIST
+ *0603*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# sz_jlc_resistor_47KΩ,(4702),±1%,0603,C25819
+#
+DEF sz_jlc_resistor_47KΩ,(4702),±1%,0603,C25819 U 0 10 N N 1 F N
+F0 "U" 10 70 50 H V L CNN
+F1 "sz_jlc_resistor_47KΩ,(4702),±1%,0603,C25819" 50 -100 50 H V L CNN
+F2 "w_smd_resistors:r_0603" 0 -1000 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "C25819" 0 -500 50 H I C CNN "LCSC_Part"
+F5 "47KΩ,(4702),±1%,0603,C25819" 50 -200 50 H I L CNN "MFR_Part"
+F6 "电阻_贴片电阻" 0 -600 50 H I C CNN "Second Category"
+F7 "0603" 0 -800 50 H I C CNN "Package"
+F8 "2" 0 -1100 50 H I C CNN "Solder Joint"
+F9 "UniOhm 台湾厚声" 0 -700 50 H I C CNN "Manufacturer"
+F10 "基础库" 0 -900 50 H I C CNN "Library Type"
+F11 "47KΩ (4702) ±1%" 0 -900 50 H I C CNN "Library Type"
+$FPLIST
+ *0603*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # taobao-c_C106,50v
 #
 DEF taobao-c_C106,50v C 0 10 N N 1 F N
@@ -63,6 +286,26 @@ P 2 0 1 13 -60 -20 60 -20 N
 P 2 0 1 12 -60 20 60 20 N
 X ~ 1 0 100 80 D 50 50 1 1 P
 X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# taobao-components_BUZZER,MLT-8530
+#
+DEF taobao-components_BUZZER,MLT-8530 BZ 0 1 Y N 1 F N
+F0 "BZ" 150 50 50 H V L CNN
+F1 "taobao-components_BUZZER,MLT-8530" 150 -50 50 H V L CNN
+F2 "footprint-lib:MLT-8530" -25 100 50 V I C CNN
+F3 "" -25 100 50 V I C CNN
+$FPLIST
+ *Buzzer*
+$ENDFPLIST
+DRAW
+A 0 0 125 -899 899 0 1 0 N 0 -125 0 125
+P 2 0 1 0 -65 75 -45 75 N
+P 2 0 1 0 -55 85 -55 65 N
+P 2 0 1 0 0 125 0 -125 N
+X N N -100 -100 100 R 50 50 1 1 P
+X P P -100 100 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -258,6 +501,46 @@ DRAW
 S -30 70 30 -70 0 1 8 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# taobao-r_R470,0603
+#
+DEF taobao-r_R470,0603 R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "taobao-r_R470,0603" 30 -40 50 H V L CNN
+F2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Resistor_SMD:R_0603*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# taobao-transistor_2N3904(1AM)
+#
+DEF taobao-transistor_2N3904(1AM) Q 0 0 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "taobao-transistor_2N3904(1AM)" 200 0 50 H V L CNN
+F2 "footprint-lib:MBT3904_1AM_SOT" 200 -75 50 H I L CIN
+F3 "" 0 0 50 H I L CNN
+$FPLIST
+ TO?92*
+ *SOT*23*
+$ENDFPLIST
+DRAW
+C 50 0 111 0 1 10 N
+P 2 0 1 0 25 25 100 100 N
+P 3 0 1 0 25 -25 100 -100 100 -100 N
+P 3 0 1 20 25 75 25 -75 25 -75 N
+P 5 0 1 0 50 -70 70 -50 90 -90 50 -70 50 -70 F
+X B 1 -200 0 225 R 50 50 1 1 P
+X E 2 100 -200 100 U 50 50 1 1 P
+X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
