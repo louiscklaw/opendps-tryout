@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -9593,4 +9593,28 @@ Wire Wire Line
 	8050 3550 8850 3550
 Wire Wire Line
 	8050 3750 8850 3750
+Text HLabel 8850 4350 2    50   BiDi ~ 0
+I2C0-SCK
+Text HLabel 8850 4550 2    50   BiDi ~ 0
+I2C0-SDA
+Wire Wire Line
+	8050 4350 8850 4350
+Wire Wire Line
+	8850 4550 8050 4550
+Text HLabel 5000 6250 3    50   Input ~ 0
+SPI0_CS
+Text HLabel 5100 6250 3    50   Input ~ 0
+SPI0_MOSI
+Text HLabel 5200 6250 3    50   Input ~ 0
+SPI0_CLK
+Text HLabel 5300 6250 3    50   Input ~ 0
+SPI0_MISO
+Wire Wire Line
+	5000 5700 5000 6250
+Wire Wire Line
+	5100 5700 5100 6250
+Wire Wire Line
+	5200 5700 5200 6250
+Wire Wire Line
+	5300 5700 5300 6250
 $EndSCHEMATC
