@@ -9369,8 +9369,6 @@ Wire Wire Line
 	10850 1800 10850 1900
 Wire Wire Line
 	10850 1450 10850 1600
-Wire Wire Line
-	10850 850  10850 950 
 $Comp
 L customized_power:+5V #PWR?
 U 1 1 5E88E558
@@ -9417,13 +9415,6 @@ F 3 "~" H 10850 1450 50  0001 C CNN
 	1    10850 1250
 	0    1    -1   0   
 $EndComp
-Text Label 10000 950  0    50   ~ 0
-FEL_ENABLE
-Wire Wire Line
-	10000 950  10850 950 
-Connection ~ 10850 950 
-Wire Wire Line
-	10850 950  10850 1050
 Text Label 9750 3250 2    50   ~ 0
 FEL_ENABLE
 $Comp
@@ -9617,4 +9608,6 @@ Wire Wire Line
 	5200 5700 5200 6250
 Wire Wire Line
 	5300 5700 5300 6250
+Wire Wire Line
+	10850 850  10850 1050
 $EndSCHEMATC
