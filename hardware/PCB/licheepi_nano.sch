@@ -9506,12 +9506,8 @@ Text Label 8700 3750 2    50   ~ 0
 UART2_RX
 Text Label 8700 4150 2    50   ~ 0
 PE10
-Wire Wire Line
-	8050 4150 8700 4150
 Text Label 8700 3950 2    50   ~ 0
 PE9
-Wire Wire Line
-	8050 3950 8700 3950
 Text Label 8700 3150 2    50   ~ 0
 PE5
 Text Label 8700 2950 2    50   ~ 0
@@ -9610,4 +9606,12 @@ Wire Wire Line
 	5300 5700 5300 6250
 Wire Wire Line
 	10850 850  10850 1050
+Text HLabel 8800 3950 2    50   Output ~ 0
+PE9
+Text HLabel 8800 4150 2    50   Output ~ 0
+PE10
+Wire Wire Line
+	8050 3950 8800 3950
+Wire Wire Line
+	8050 4150 8800 4150
 $EndSCHEMATC
