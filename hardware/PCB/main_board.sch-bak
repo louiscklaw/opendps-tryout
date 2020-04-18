@@ -192,19 +192,6 @@ F 3 "~" H 3750 3450 50  0001 C CNN
 	1    3750 3450
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E94A27E
-P 4200 3350
-F 0 "#PWR?" H 4200 3100 50  0001 C CNN
-F 1 "GND" V 4205 3222 50  0000 R CNN
-F 2 "" H 4200 3350 50  0001 C CNN
-F 3 "" H 4200 3350 50  0001 C CNN
-	1    4200 3350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3950 3350 4200 3350
 Wire Wire Line
 	3950 3450 4800 3450
 Wire Wire Line
@@ -311,6 +298,19 @@ Text Label 7500 5300 2    50   ~ 0
 SPI0_CLK
 Text Label 7500 5400 2    50   ~ 0
 SPI0_MISO
+Wire Wire Line
+	3950 3350 4200 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5E94A27E
+P 4200 3350
+F 0 "#PWR?" H 4200 3100 50  0001 C CNN
+F 1 "GND" V 4205 3222 50  0000 R CNN
+F 2 "" H 4200 3350 50  0001 C CNN
+F 3 "" H 4200 3350 50  0001 C CNN
+	1    4200 3350
+	0    -1   -1   0   
+$EndComp
 Wire Bus Line
 	3550 2300 3550 3050
 Wire Bus Line

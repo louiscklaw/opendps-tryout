@@ -9617,4 +9617,10 @@ Wire Wire Line
 	5200 5700 5200 6250
 Wire Wire Line
 	5300 5700 5300 6250
+Text Label 8700 3350 2    50   ~ 0
+PE6
+Text HLabel 8800 3350 2    50   Output ~ 0
+PE6
+Wire Wire Line
+	8050 3350 8800 3350
 $EndSCHEMATC
