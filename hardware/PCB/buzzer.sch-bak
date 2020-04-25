@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -9446,20 +9446,6 @@ F 3 "" V 8425 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148 D?
-U 1 1 5E91DA60
-P 7850 2250
-AR Path="/5E87CEF1/5E91DA60" Ref="D?"  Part="1" 
-AR Path="/5E91CDD8/5E91DA60" Ref="D1"  Part="1" 
-AR Path="/5E91DA60" Ref="D?"  Part="1" 
-F 0 "D1" V 7804 2329 50  0000 L CNN
-F 1 "1N4148" V 7895 2329 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7850 2075 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7850 2250 50  0001 C CNN
-	1    7850 2250
-	0    1    1    0   
-$EndComp
-$Comp
 L taobao-transistor:2N3904(1AM) Q?
 U 1 1 5E91DA66
 P 8150 3100
@@ -9492,8 +9478,8 @@ L customized_power:+5V #PWR?
 U 1 1 5E91DA72
 P 8200 1600
 AR Path="/5E87CEF1/5E91DA72" Ref="#PWR?"  Part="1" 
-AR Path="/5E91CDD8/5E91DA72" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 8200 1450 50  0001 C CNN
+AR Path="/5E91CDD8/5E91DA72" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 8200 1450 50  0001 C CNN
 F 1 "+5V" H 8215 1773 50  0000 C CNN
 F 2 "" H 8200 1600 50  0001 C CNN
 F 3 "" H 8200 1600 50  0001 C CNN
@@ -9505,16 +9491,12 @@ Wire Wire Line
 Wire Wire Line
 	8200 1750 7850 1750
 Wire Wire Line
-	7850 1750 7850 2100
-Wire Wire Line
 	8200 1750 8300 1750
 Wire Wire Line
 	8300 1750 8300 2150
 Wire Wire Line
 	8300 2150 8350 2150
 Connection ~ 8200 1750
-Wire Wire Line
-	7850 2400 7850 2550
 Wire Wire Line
 	7850 2550 8250 2550
 Wire Wire Line
@@ -9533,8 +9515,8 @@ L power:GND #PWR?
 U 1 1 5E91DA87
 P 8250 3650
 AR Path="/5E87CEF1/5E91DA87" Ref="#PWR?"  Part="1" 
-AR Path="/5E91CDD8/5E91DA87" Ref="#PWR0124"  Part="1" 
-F 0 "#PWR0124" H 8250 3400 50  0001 C CNN
+AR Path="/5E91CDD8/5E91DA87" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 8250 3400 50  0001 C CNN
 F 1 "GND" H 8255 3477 50  0000 C CNN
 F 2 "" H 8250 3650 50  0001 C CNN
 F 3 "" H 8250 3650 50  0001 C CNN
@@ -9576,4 +9558,26 @@ Wire Wire Line
 Connection ~ 6700 3100
 Wire Wire Line
 	6700 3100 6450 3100
+$Comp
+L sz_jlc_diode:M1,GPP,SMA,DO-214AC,C123825 U?
+U 1 1 5EA779A4
+P 7850 2250
+F 0 "U?" V 7804 2183 50  0000 R CNN
+F 1 "M1,GPP,SMA,DO-214AC,C123825" V 7895 2183 50  0000 R CNN
+F 2 "footprint-lib:DO-214AC" H 7850 1250 50  0001 C CNN
+F 3 "~" H 7850 2250 50  0001 C CNN
+F 4 "C123825" H 7850 1750 50  0001 C CNN "LCSC_Part"
+F 5 "M1,GPP,SMA,DO-214AC,C123825" H 7900 2050 50  0001 L CNN "MFR_Part"
+F 6 "二极管_通用二极管" H 7850 1650 50  0001 C CNN "Second Category"
+F 7 "SMA,DO-214AC" H 7850 1450 50  0001 C CNN "Package"
+F 8 "2" H 7850 1150 50  0001 C CNN "Solder Joint"
+F 9 "MDD" H 7850 1550 50  0001 C CNN "Manufacturer"
+F 10 "M1 GPP" H 7850 1350 50  0001 C CNN "Library Type"
+	1    7850 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 2350 7850 2550
+Wire Wire Line
+	7850 1750 7850 2150
 $EndSCHEMATC
