@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -9436,9 +9436,9 @@ L taobao-components:BUZZER,MLT-8530 BZ?
 U 1 1 5E91DA5A
 P 8450 2250
 AR Path="/5E87CEF1/5E91DA5A" Ref="BZ?"  Part="1" 
-AR Path="/5E91CDD8/5E91DA5A" Ref="BZ?"  Part="1" 
+AR Path="/5E91CDD8/5E91DA5A" Ref="BZ1"  Part="1" 
 AR Path="/5E91DA5A" Ref="BZ?"  Part="1" 
-F 0 "BZ?" H 8603 2279 50  0000 L CNN
+F 0 "BZ1" H 8603 2279 50  0000 L CNN
 F 1 "BUZZER,MLT-8530" H 8603 2188 50  0000 L CNN
 F 2 "footprint-lib:MLT-8530" V 8425 2350 50  0001 C CNN
 F 3 "" V 8425 2350 50  0001 C CNN
@@ -9450,9 +9450,9 @@ L Diode:1N4148 D?
 U 1 1 5E91DA60
 P 7850 2250
 AR Path="/5E87CEF1/5E91DA60" Ref="D?"  Part="1" 
-AR Path="/5E91CDD8/5E91DA60" Ref="D?"  Part="1" 
+AR Path="/5E91CDD8/5E91DA60" Ref="D1"  Part="1" 
 AR Path="/5E91DA60" Ref="D?"  Part="1" 
-F 0 "D?" V 7804 2329 50  0000 L CNN
+F 0 "D1" V 7804 2329 50  0000 L CNN
 F 1 "1N4148" V 7895 2329 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7850 2075 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7850 2250 50  0001 C CNN
@@ -9464,9 +9464,9 @@ L taobao-transistor:2N3904(1AM) Q?
 U 1 1 5E91DA66
 P 8150 3100
 AR Path="/5E87CEF1/5E91DA66" Ref="Q?"  Part="1" 
-AR Path="/5E91CDD8/5E91DA66" Ref="Q?"  Part="1" 
+AR Path="/5E91CDD8/5E91DA66" Ref="Q1"  Part="1" 
 AR Path="/5E91DA66" Ref="Q?"  Part="1" 
-F 0 "Q?" H 8341 3146 50  0000 L CNN
+F 0 "Q1" H 8341 3146 50  0000 L CNN
 F 1 "2N3904(1AM)" H 8341 3055 50  0000 L CNN
 F 2 "footprint-lib:MBT3904_1AM_SOT" H 8350 3025 50  0001 L CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/MMBT3904.pdf" H 8150 3100 50  0001 L CNN
@@ -9478,9 +9478,9 @@ L taobao-r:R470,0603 R?
 U 1 1 5E91DA6C
 P 7550 3100
 AR Path="/5E87CEF1/5E91DA6C" Ref="R?"  Part="1" 
-AR Path="/5E91CDD8/5E91DA6C" Ref="R?"  Part="1" 
+AR Path="/5E91CDD8/5E91DA6C" Ref="R1"  Part="1" 
 AR Path="/5E91DA6C" Ref="R?"  Part="1" 
-F 0 "R?" V 7354 3100 50  0000 C CNN
+F 0 "R1" V 7354 3100 50  0000 C CNN
 F 1 "R470,0603" V 7445 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7550 3100 50  0001 C CNN
 F 3 "~" H 7550 3100 50  0001 C CNN
@@ -9546,12 +9546,12 @@ Wire Wire Line
 Text HLabel 5650 3100 0    50   Input ~ 0
 BUZZER_OUTPUT
 $Comp
-L Device:Jumper JP?
+L Device:Jumper JP1
 U 1 1 5E99CD71
 P 6150 3100
-F 0 "JP?" H 6150 3364 50  0000 C CNN
+F 0 "JP1" H 6150 3364 50  0000 C CNN
 F 1 "Jumper" H 6150 3273 50  0000 C CNN
-F 2 "" H 6150 3100 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6150 3100 50  0001 C CNN
 F 3 "~" H 6150 3100 50  0001 C CNN
 	1    6150 3100
 	1    0    0    -1  
@@ -9561,12 +9561,12 @@ Wire Wire Line
 Wire Wire Line
 	7450 3100 6700 3100
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP1
 U 1 1 5E99F415
 P 6700 2850
-F 0 "TP?" H 6758 2968 50  0000 L CNN
+F 0 "TP1" H 6758 2968 50  0000 L CNN
 F 1 "TestPoint" H 6758 2877 50  0000 L CNN
-F 2 "" H 6900 2850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6900 2850 50  0001 C CNN
 F 3 "~" H 6900 2850 50  0001 C CNN
 	1    6700 2850
 	1    0    0    -1  

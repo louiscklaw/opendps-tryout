@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -50,12 +50,12 @@ Text HLabel 5950 900  0    50   Input ~ 0
 Text HLabel 5950 1000 0    50   Input ~ 0
 3V3
 $Comp
-L Connector:Screw_Terminal_01x03 J?
+L Connector:Screw_Terminal_01x03 J12
 U 1 1 5EA42942
 P 6250 900
-F 0 "J?" H 6330 942 50  0000 L CNN
+F 0 "J12" H 6330 942 50  0000 L CNN
 F 1 "POWER" H 6330 851 50  0000 L CNN
-F 2 "" H 6250 900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6250 900 50  0001 C CNN
 F 3 "~" H 6250 900 50  0001 C CNN
 	1    6250 900 
 	1    0    0    -1  
@@ -67,12 +67,12 @@ Wire Wire Line
 Wire Wire Line
 	5950 1000 6050 1000
 $Comp
-L Connector:Screw_Terminal_01x04 J?
+L Connector:Screw_Terminal_01x04 J11
 U 1 1 5EA44B19
 P 4350 900
-F 0 "J?" H 4430 892 50  0000 L CNN
+F 0 "J11" H 4430 892 50  0000 L CNN
 F 1 "USB_IO" H 4430 801 50  0000 L CNN
-F 2 "" H 4350 900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4350 900 50  0001 C CNN
 F 3 "~" H 4350 900 50  0001 C CNN
 	1    4350 900 
 	1    0    0    -1  
@@ -86,12 +86,12 @@ Wire Wire Line
 Wire Wire Line
 	4000 1100 4150 1100
 $Comp
-L Connector:Screw_Terminal_01x04 J?
+L Connector:Screw_Terminal_01x04 J10
 U 1 1 5EA45B2D
 P 2850 900
-F 0 "J?" H 2930 892 50  0000 L CNN
+F 0 "J10" H 2930 892 50  0000 L CNN
 F 1 "PA_IO" H 2930 801 50  0000 L CNN
-F 2 "" H 2850 900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2850 900 50  0001 C CNN
 F 3 "~" H 2850 900 50  0001 C CNN
 	1    2850 900 
 	1    0    0    -1  
@@ -117,12 +117,12 @@ PE6
 Text HLabel 1200 1400 0    50   Input ~ 0
 PE5
 $Comp
-L Connector:Screw_Terminal_01x04 J?
+L Connector:Screw_Terminal_01x04 J6
 U 1 1 5EA4A367
 P 1550 900
-F 0 "J?" H 1630 892 50  0000 L CNN
+F 0 "J6" H 1630 892 50  0000 L CNN
 F 1 "PE_IO_0" H 1630 801 50  0000 L CNN
-F 2 "" H 1550 900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1550 900 50  0001 C CNN
 F 3 "~" H 1550 900 50  0001 C CNN
 	1    1550 900 
 	1    0    0    -1  
@@ -136,12 +136,12 @@ Wire Wire Line
 Wire Wire Line
 	1200 1100 1350 1100
 $Comp
-L Connector:Screw_Terminal_01x04 J?
+L Connector:Screw_Terminal_01x04 J7
 U 1 1 5EA4BC4B
 P 1550 1400
-F 0 "J?" H 1630 1392 50  0000 L CNN
+F 0 "J7" H 1630 1392 50  0000 L CNN
 F 1 "PE_IO_1" H 1630 1301 50  0000 L CNN
-F 2 "" H 1550 1400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1550 1400 50  0001 C CNN
 F 3 "~" H 1550 1400 50  0001 C CNN
 	1    1550 1400
 	1    0    0    -1  
@@ -161,23 +161,23 @@ Wire Wire Line
 Wire Wire Line
 	1200 2050 1350 2050
 $Comp
-L Connector:Screw_Terminal_01x03 J?
+L Connector:Screw_Terminal_01x03 J8
 U 1 1 5EA4E4D8
 P 1550 1950
-F 0 "J?" H 1630 1992 50  0000 L CNN
+F 0 "J8" H 1630 1992 50  0000 L CNN
 F 1 "PE_IO_2" H 1630 1901 50  0000 L CNN
-F 2 "" H 1550 1950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1550 1950 50  0001 C CNN
 F 3 "~" H 1550 1950 50  0001 C CNN
 	1    1550 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J9
 U 1 1 5EA4F4CE
 P 1550 2350
-F 0 "J?" H 1630 2342 50  0000 L CNN
+F 0 "J9" H 1630 2342 50  0000 L CNN
 F 1 "PE_IO_3/TWI0" H 1630 2251 50  0000 L CNN
-F 2 "" H 1550 2350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1550 2350 50  0001 C CNN
 F 3 "~" H 1550 2350 50  0001 C CNN
 	1    1550 2350
 	1    0    0    -1  
