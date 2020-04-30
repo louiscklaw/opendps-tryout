@@ -26,7 +26,7 @@ jobs:
 
       script:
         - sudo mkdir /usr/lib/freecad-python3/Mod
-        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-freecad-checking/freecad_open_test.py .travis/freecad_open_test.py
+        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-freecad-checking/freecad_open_test.py -O .travis/freecad_open_test.py
         - for i in $(find . -name '*.FCStd'); do python3 .travis/freecad_open_test.py $i; done
 
     - stage: STL test
