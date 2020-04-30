@@ -1,7 +1,44 @@
-dist: bionic
+# https://docs.travis-ci.com/user/docker/
+# https://docs.travis-ci.com/user/environment-variables/
+# https://docs.travis-ci.com/user/job-lifecycle/
+
+# You can import up to 25 other configs in total.
+os: linux
+
+language: node_js
+node_js:
+  - 12
+cache:
+  - npm
+  - pip
 
 import:
   - credentials.yml
+
+jobs:
+  include:
+    - stage: Freecad test
+      name: travis-freecad-checking
+      before_script:
+        - sudo add-apt-repository -y ppa:freecad-maintainers/freecad-stable
+        - sudo apt-get update
+        - sudo apt-get install -y freecad freecad-python3
+
+      script:
+        - sudo mkdir /usr/lib/freecad-python3/Mod
+        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-freecad-checking/freecad_open_test.py .travis/freecad_open_test.py
+        - for i in $(find . -name '*.FCStd'); do python3 .travis/freecad_open_test.py $i; done
+
+    - stage: STL test
+      name: travis-stl-checking
+      before_script:
+        - npm install remark-cli remark-validate-links
+      script:
+        - git clone https://github.com/louiscklaw/GithubScripts.git .github_scripts
+        - /bin/bash ./.github_scripts/travis/ci-build.sh
+
+before_script:
+  - mkdir .travis
 
 script:
   - hostname
