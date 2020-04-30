@@ -1,2 +1,6 @@
 *.FCStd diff=zip
 *.fcstd diff=zip
+
+*.step diff=zip
+*.stl diff=zip
+*.3mf diff=zip
